@@ -1,3 +1,9 @@
+/**
+ * Calculate the max of numbers
+ *
+ * @param numbers Array
+ * @param quantifier how many numbers
+ */
 const max = (numbers, quantifier) => {
   return Math.max(...numbers)
 }

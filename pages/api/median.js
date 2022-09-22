@@ -1,3 +1,9 @@
+/**
+ * Calculate the median of numbers
+ *
+ * @param numbers Array
+ * @param quantifier how many numbers
+ */
 const median = (numbers, quantifier) => {
   numbers.sort((a, b) => a - b)
   if (quantifier % 2 === 0) return (numbers[quantifier / 2 - 1] + numbers[quantifier / 2]) / 2

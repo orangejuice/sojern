@@ -1,3 +1,9 @@
+/**
+ * Calculate the min of numbers
+ *
+ * @param numbers Array
+ * @param quantifier how many numbers
+ */
 const min = (numbers, quantifier) => {
   return Math.min(...numbers)
 }
