@@ -4,10 +4,11 @@ Features:
 
 - Favorite dogs Web App: https://sojern-orangejuice.vercel.app/
 - API:
-    - /api/min
-    - /api/max
-    - /api/avg
-    - /api/median
+  - /api/compare-versions
+  - /api/min
+  - /api/max
+  - /api/avg
+  - /api/median
 
 ---
 
