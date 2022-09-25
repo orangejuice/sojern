@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
-    "vercel-build": "prisma migrate deploy && next build"
+    "vercel-build": "DATABASE_URL=\"$MIGRATE_DATABASE_URL\" prisma migrate deploy && next build",
+    "generate-client": "prisma generate --data-proxy"
   },
   "dependencies": {
     "@prisma/client": "^4.3.1",
