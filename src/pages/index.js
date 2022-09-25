@@ -1,11 +1,11 @@
-import styles from '../styles/Home.module.css'
-import DogPicture from "../components/dogPicture";
+import styles from '../../styles/Home.module.css'
+import DogPicture from "../components/DogPicture";
 import useSWR from "swr";
-import {fetchArray} from "../components/utils";
+import {fetchArray} from "../lib/utils";
 import {HiRefresh} from "react-icons/hi";
-import CustomizedHead from "../components/customizedHead";
-import Footer from "../components/footer";
-import CustomizedNav from "../components/customizedNav";
+import CustomizedHead from "../components/CustomizedHead";
+import Footer from "../components/Footer";
+import CustomizedNav from "../components/CustomizedNav";
 
 
 function Home(props) {

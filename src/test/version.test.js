@@ -1,9 +1,9 @@
 import {createMocks} from 'node-mocks-http';
-import handleComparison from '../pages/api/comare-versions';
+import handle from '../pages/api/version';
 import {describe, expect, test} from '@jest/globals';
 
 
-describe('/api/compare-versions', () => {
+describe('/api/version', () => {
   test('return version comparison result', async () => {
     const {req, res} = createMocks({
       method: 'GET',
@@ -13,7 +13,7 @@ describe('/api/compare-versions', () => {
       },
     });
 
-    await handleComparison(req, res);
+    await handle(req, res);
 
     expect(res._getStatusCode()).toBe(200);
     expect(JSON.parse(res._getData())).toEqual(

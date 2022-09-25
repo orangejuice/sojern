@@ -15,3 +15,5 @@
 - https://stackoverflow.com/questions/58613492/how-to-resolve-cannot-use-import-statement-outside-a-module-in-jest
 - https://jestjs.io/docs/configuration
 - https://github.com/vercel/next.js/tree/canary/examples/with-jest
+- https://nodejs.org/api/fs.html
+- https://nextjs.org/docs/api-routes/edge-api-routes

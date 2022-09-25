@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {FaRegThumbsUp, FaThumbsUp} from 'react-icons/fa'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import React from "react";
 
 

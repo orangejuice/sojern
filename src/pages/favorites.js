@@ -1,9 +1,9 @@
-import styles from "../styles/Home.module.css";
-import DogPicture from "../components/dogPicture";
-import {stringToBase64} from "../components/utils";
-import CustomizedHead from "../components/customizedHead";
-import CustomizedNav from "../components/customizedNav";
-import Footer from "../components/footer";
+import styles from "../../styles/Home.module.css";
+import DogPicture from "../components/DogPicture";
+import {stringToBase64} from "../lib/utils";
+import CustomizedHead from "../components/CustomizedHead";
+import CustomizedNav from "../components/CustomizedNav";
+import Footer from "../components/Footer";
 
 export default function Favorites(props) {
   const {likedDogs} = props
