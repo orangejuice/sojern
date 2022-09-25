@@ -30,7 +30,7 @@ export default async function handler(req) {
   // console.log(req)
   console.log(record)
 
-  if (typeof window === undefined) {
+  try {
     const prisma = new PrismaClient()
 
     // (async () => {
@@ -42,6 +42,8 @@ export default async function handler(req) {
     //   console.error(e)
     //   await prisma.$disconnect()
     // })
+  } catch (e) {
+    console.error(e)
   }
 
   // const client = await dbClient
