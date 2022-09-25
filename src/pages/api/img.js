@@ -1,5 +1,5 @@
 import {NextResponse, userAgent} from 'next/server'
-import {PrismaClient} from "@prisma/client";
+import {PrismaClient} from "@prisma/client/edge";
 // import {prisma} from "../../lib/db";
 
 // import dbClient from "../../lib/db"
