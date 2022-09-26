@@ -7,7 +7,7 @@ Features:
 - api providing math calculations
 - /img providing server tracking
 
-## API Usage (TODO)
+## API Usage
 
 ### /api/version
 
