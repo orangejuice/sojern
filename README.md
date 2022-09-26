@@ -4,12 +4,12 @@ Features:
 
 1. Favorite dogs React App: https://sojern.orangejuice.vercel.app/
 1. api providing version number comparison
-  - /api/version
+    - /api/version
 1. api providing math calculations
-  - /api/math
+    - /api/math
 1. demo providing server ping & tracking
-  - /api/ping
-  - /api/img
+    - /api/ping
+    - /api/img
 
 ## API Usage
 
