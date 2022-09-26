@@ -1,10 +1,12 @@
 import * as fs from "fs";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const filename = '/tmp/ok'
 
-  if (fs.statSync(filename))
-    res.status(200).send('ok')
-  else
-    res.status(503).send('Service unavailable.')
+  fs.stat(filename, (err, stats) => {
+    if (stats)
+      res.status(200).send('ok')
+    else
+      res.status(503).send('Service unavailable.')
+  })
 }

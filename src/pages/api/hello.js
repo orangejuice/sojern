@@ -1,5 +1,11 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import {NextResponse} from 'next/server';
 
-export default function handler(req, res) {
-  res.status(200).send('ok')
-}
+export default function handle(req) {
+  return NextResponse.json({
+    edge: true,
+  });
+};
+
+export const config = {
+  runtime: 'experimental-edge',
+};
