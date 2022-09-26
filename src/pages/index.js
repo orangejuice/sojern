@@ -19,7 +19,7 @@ function Home(props) {
     <>
       <CustomizedHead/>
       <main className={styles.main + ' ' + styles.container}>
-        <CustomizedNav title='Favorite dogs'/>
+        <CustomizedNav home={true}/>
 
         <div className={styles.grid + ' ' + styles.refresh}>
           <a onClick={() => mutate()}>

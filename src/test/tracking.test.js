@@ -23,7 +23,6 @@ describe('/api/ping', () => {
 
     await pingHandle(req, res)
 
-    console.log(res._getStatusCode(), res._getData())
     expect(res._getStatusCode()).toBe(200)
     expect(res._getData()).toEqual('ok')
   })
