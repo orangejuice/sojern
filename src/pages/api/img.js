@@ -1,6 +1,6 @@
 import {NextResponse, userAgent} from 'next/server'
-import {PrismaClient} from "@prisma/client/edge";
-// import {prisma} from "../../lib/db";
+// import {PrismaClient} from "@prisma/client/edge";
+import prisma from "../../lib/db";
 
 // import dbClient from "../../lib/db"
 
@@ -36,8 +36,6 @@ export default async function handler(req) {
   // console.log(record)
 
   try {
-    const prisma = new PrismaClient()
-
     // (async () => {
     await prisma.$connect()
     await prisma.records.create({data: {...record}})
