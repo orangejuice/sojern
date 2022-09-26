@@ -11,13 +11,71 @@ Features:
 
 ### /api/version
 
-```json
+Compare two version numbers
 
-```
+If version1 > version2 return 1,
+
+If version1 < version2 return -1,
+
+otherwise return 0
+
+Example request: `[GET]  /api/version?v1=0.1&v2=1.1`
+
+Example response: `{"result":-1}`
 
 ### /api/math
 
+Calculate math result and return to the user, including:
+
+- minimum (func: min)
+- maximum (func: max)
+- average (func: avg)
+- median (func: median)
+- percentile (func: percentile)
+
+Example request:
+
+``[GET]  /api/math``
+
+with json
+
+```json
+{
+  "func": "min",
+  "numbers": [
+    35.4525,
+    2465.34,
+    253.42,
+    5,
+    425.5,
+    234,
+    57426,
+    4265,
+    523,
+    2593
+  ],
+  "quantifier": 10
+}
+```
+
+Example response:
+
+```json
+{
+  "statusCode": 200,
+  "message": "calculated minimum value",
+  "result": 5
+}
+```
+
 ### /api/ping
+
+Returns response code 200 and string OK when file /tmp/ok is present, if file is not present returns 503 service
+unavailable
+
+Example request: `[GET]  /api/ping`
+
+Example response: `ok`
 
 ### /api/img
 
@@ -42,7 +100,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed
 on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited
-in `pages/api/hello.js`.
+in `pages/api/index.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated
 as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.

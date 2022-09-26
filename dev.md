@@ -17,3 +17,5 @@
 - https://github.com/vercel/next.js/tree/canary/examples/with-jest
 - https://nodejs.org/api/fs.html
 - https://nextjs.org/docs/api-routes/edge-api-routes
+- https://www.prisma.io/docs/concepts/database-connectors/mongodb
+- https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-node-mongodb
