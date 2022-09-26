@@ -26,16 +26,21 @@ export default async function handler(req) {
   const url = req.nextUrl.clone()
   const {device} = userAgent(req)
 
-  const record = {ip: req.ip, url: url.href, device, time: new Date().toISOString()}
+  const record = {
+    ip: req.ip ? req.ip : '',
+    url: url.href,
+    device: device.type ? device.type : '',
+    time: new Date().toISOString()
+  }
   // console.log(req)
-  console.log(record)
+  // console.log(record)
 
   try {
     const prisma = new PrismaClient()
 
     // (async () => {
     await prisma.$connect()
-    await prisma.record.create({data: {...record}})
+    await prisma.records.create({data: {...record}})
     // }).then(async () => {
     await prisma.$disconnect()
     // }).catch(async (e) => {
