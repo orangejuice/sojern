@@ -79,6 +79,8 @@ Example response: `ok`
 
 ### /api/img
 
+Returns a 1x1 image, and log the request to mongodb database.
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped
